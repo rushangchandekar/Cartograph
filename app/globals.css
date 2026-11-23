@@ -2,12 +2,56 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #111111;
+  --bg: #ffffff;
+  --bg-hover: #fafafa;
+  --bg-elevated: #f5f5f5;
+  --fg: #111111;
+  --fg-muted: #666666;
+  --border-color: #e5e5e5;
+
+  --status-pending-bg: #fffbeb;
+  --status-pending-fg: #92400e;
+  --status-pending-border: #fde68a;
+
+  --status-running-bg: #eff6ff;
+  --status-running-fg: #1e40af;
+  --status-running-border: #bfdbfe;
+
+  --status-completed-bg: #f0fdf4;
+  --status-completed-fg: #166534;
+  --status-completed-border: #bbf7d0;
+
+  --status-failed-bg: #fef2f2;
+  --status-failed-fg: #991b1b;
+  --status-failed-border: #fecaca;
 }
 
 .dark {
   --background: #0a0a0a;
-  --foreground: #ededed;
+  --foreground: #fafafa;
+  --bg: #0a0a0a;
+  --bg-hover: #111111;
+  --bg-elevated: #1a1a1a;
+  --fg: #fafafa;
+  --fg-muted: #a3a3a3;
+  --border-color: #2a2a2a;
+
+  --status-pending-bg: #78350f;
+  --status-pending-fg: #fde68a;
+  --status-pending-border: #92400e;
+
+  --status-running-bg: #1e3a5f;
+  --status-running-fg: #93c5fd;
+  --status-running-border: #1e40af;
+
+  --status-completed-bg: #14532d;
+  --status-completed-fg: #86efac;
+  --status-completed-border: #166534;
+
+  --status-failed-bg: #7f1d1d;
+  --status-failed-fg: #fca5a5;
+  --status-failed-border: #991b1b;
 }
 
 @theme inline {

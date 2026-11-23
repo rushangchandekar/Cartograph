@@ -40,15 +40,24 @@ export async function getSupabaseServerClient() {
  * Creates a Supabase client that carries the Clerk token.
  * The token is passed via the Authorization header so RLS policies
  * can read the organization claim from it.
+ *
+ * Falls back to anonymous client if no token or template not configured.
  */
 export async function getSupabaseClientWithToken() {
   const { auth } = await import("@clerk/nextjs/server");
   const { getToken } = await auth();
 
-  const token = await getToken({ template: "supabase" });
+  let token: string | null = null;
+
+  try {
+    token = await getToken({ template: "supabase" });
+  } catch (error) {
+    // Template might not be configured, or user not in org
+    console.warn("Failed to get Supabase token:", error);
+  }
 
   if (!token) {
-    // No Clerk session — return anonymous client (RLS will handle access)
+    // No Clerk session or template not configured — return anonymous client (RLS will handle access)
     return getSupabaseServerClient();
   }
 

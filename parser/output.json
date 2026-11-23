@@ -1,0 +1,89 @@
+{
+  "rootPath": "C:/Users/Rushang/AppData/Local/Temp/test-repo",
+  "files": [
+    {
+      "path": "C:\\Users\\Rushang\\AppData\\Local\\Temp\\test-repo\\src\\index.ts",
+      "relativePath": "src\\index.ts",
+      "folder": "src",
+      "ext": ".ts",
+      "loc": 6,
+      "totalLines": 8,
+      "hash": "47f0efa7791bef70f9b5ab08c6983a1801a1b06e99f02877c0dff19aac0819f6",
+      "language": "typescript",
+      "parsed": true
+    },
+    {
+      "path": "C:\\Users\\Rushang\\AppData\\Local\\Temp\\test-repo\\src\\utils\\format.ts",
+      "relativePath": "src\\utils\\format.ts",
+      "folder": "src\\utils",
+      "ext": ".ts",
+      "loc": 4,
+      "totalLines": 6,
+      "hash": "177197c2d6a9dd6007e12119cf70744bbfc0532eda9a1eff55804e70bbfdcdb5",
+      "language": "typescript",
+      "parsed": true
+    },
+    {
+      "path": "C:\\Users\\Rushang\\AppData\\Local\\Temp\\test-repo\\src\\utils\\math.ts",
+      "relativePath": "src\\utils\\math.ts",
+      "folder": "src\\utils",
+      "ext": ".ts",
+      "loc": 3,
+      "totalLines": 4,
+      "hash": "9a30ac96b5d5c1b67eca69e1e2cf0798817d9578c8d7d904a81a67b983b35cba",
+      "language": "typescript",
+      "parsed": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "src/index.ts",
+      "to": "src/utils/math.ts",
+      "specifier": "./utils/math",
+      "kind": "static",
+      "resolved": true,
+      "line": 1
+    },
+    {
+      "from": "src/index.ts",
+      "to": "src/utils/format.ts",
+      "specifier": "./utils/format",
+      "kind": "static",
+      "resolved": true,
+      "line": 2
+    },
+    {
+      "from": "src/utils/format.ts",
+      "to": "src/utils/math.ts",
+      "specifier": "./math",
+      "kind": "static",
+      "resolved": true,
+      "line": 1
+    }
+  ],
+  "coverage": {
+    "totalImports": 3,
+    "resolved": 3,
+    "external": 0,
+    "unresolved": 0,
+    "unresolvedByReason": {
+      "external": 0,
+      "missing": 0,
+      "ambiguous": 0,
+      "excluded": 0,
+      "unsupported": 0,
+      "barrel_unresolved": 0
+    },
+    "unresolvedExamples": []
+  },
+  "fanIn": {
+    "src/utils/math.ts": 2,
+    "src/utils/format.ts": 1
+  },
+  "fanOut": {
+    "src/index.ts": 2,
+    "src/utils/format.ts": 1
+  },
+  "timestamp": "2026-11-22T16:35:40.658Z",
+  "parserVersion": "1.0.0"
+}

@@ -15,13 +15,19 @@
     "@radix-ui/react-select": "^2.4.1",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.118.0",
+    "@types/dagre": "^0.7.54",
     "clsx": "^2.1.1",
+    "dagre": "^0.8.5",
     "lucide-react": "^1.77.0",
-    "next": "16.4.2",
+    "minimatch": "^11.0.9",
+    "next": "16.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0",
+    "reactflow": "^11.11.4",
     "svix": "^2.11.0",
-    "tailwind-merge": "^3.7.1"
+    "tailwind-merge": "^3.7.1",
+    "ts-morph": "^28.0.0",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
